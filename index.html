@@ -11,7 +11,7 @@
     <script src="js/move-controls.js"></script>
 
     <!-- Teleport controls (optional but nice) -->
-    <script src="https://unpkg.com/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script>
+    <!-- <script src="https://unpkg.com/aframe-teleport-controls/dist/aframe-teleport-controls.min.js"></script> -->
   </head>
   <body>
     <a-scene>
@@ -47,10 +47,10 @@
 
         <!-- Right controller + teleport -->
         <a-entity
-          id="rightHand"
-          meta-touch-controls="hand: right"
-          teleport-controls="cameraRig: #rig; button: trigger; collisionEntities: a-plane">
+        id="rightHand"
+        meta-touch-controls="hand: right">
         </a-entity>
+
 
       </a-entity>
     </a-scene>
