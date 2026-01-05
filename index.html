@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My VR Room</title>
+    <!-- A-Frame from CDN -->
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Sky and ground -->
+      <a-sky color="#222233"></a-sky>
+      <a-plane rotation="-90 0 0" width="10" height="10" color="#444"></a-plane>
+
+      <!-- A floating box "panel" in front of you -->
+      <a-box position="0 1.5 -3" depth="0.1" height="1" width="1.5" color="#4CC3D9"></a-box>
+
+      <!-- Camera / player -->
+      <a-entity camera wasd-controls look-controls position="0 1.6 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
